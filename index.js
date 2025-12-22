@@ -1,3 +1,4 @@
+// -------------------- Imports --------------------
 import { Client, GatewayIntentBits, Partials } from 'discord.js';
 import express from 'express';
 import dotenv from 'dotenv';
@@ -88,7 +89,6 @@ Datum: ${antwoorden.datum}`;
 });
 
 // -------------------- Webserver voor UptimeRobot --------------------
-const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
@@ -102,4 +102,3 @@ app.listen(PORT, () => {
 
 // -------------------- Discord Login --------------------
 client.login(process.env.TOKEN);
-
