@@ -1,0 +1,19 @@
+{
+  "name": "apldn-training-bot",
+  "version": "1.0.0",
+  "description": "Discord bot voor trainingen met 1 slash command en embed",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "deploy-commands": "node deploy-commands.js",
+    "delete-commands": "node delete-commands.js"
+  },
+  "author": "Levi",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
