@@ -88,16 +88,18 @@ Datum: ${antwoorden.datum}`;
 });
 
 // -------------------- Webserver voor UptimeRobot --------------------
+const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
-  res.send('Bot is online 🚀');
+    res.send('Bot is online! 🌐');
 });
 
 app.listen(PORT, () => {
-  console.log(`🌐 Webserver draait op poort ${PORT}`);
+    console.log(`🌐 Webserver draait op poort ${PORT}`);
 });
 
 // -------------------- Discord Login --------------------
 client.login(process.env.TOKEN);
+
